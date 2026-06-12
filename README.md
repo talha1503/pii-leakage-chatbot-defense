@@ -2,7 +2,7 @@
 
 ## CS690F: Trustworthy and Responsible AI - Fall 2025
 
-**Group 1:** Swetha Krishnan, Talha Mohammed, Zakir Chafekar, Thasmitha Bangalure Shekhar, Anushka Agarwal
+**Group 1:** Swetha Krishnan, Talha Chafekar, Thasmitha Bangalure Shekhar, Anushka Agarwal
 
 ---
 
