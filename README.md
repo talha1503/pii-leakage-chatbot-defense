@@ -39,7 +39,7 @@ This project investigates **Personally Identifiable Information (PII) leakage vu
 
 ```bash
 # Clone or navigate to the project directory
-cd final_project
+cd pii-leakage-chatbot-defense
 
 # Install dependencies
 pip install -r requirements.txt
@@ -97,7 +97,7 @@ python train_grpo.py
 ## 📁 Project Structure
 
 ```
-final_project/
+pii-leakage-chatbot-defense/
 │
 ├── config.py                       # Configuration and hyperparameters
 ├── data.py                         # Synthetic data generation with PII injection
@@ -1274,4 +1274,3 @@ This project demonstrates:
 For the latest updates and additional resources, visit our [GitHub repository](link-to-repo).
 
 ---
-
