@@ -1,0 +1,100 @@
+======================================================================
+PII LEAKAGE ANALYSIS IN CHATBOT SETTINGS
+Final Report
+======================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------
+Total models evaluated: 4
+
+Best balanced model: Baseline (No Protection)
+  Privacy-Utility Score: 0.989
+Best privacy: GRPO (Ranked Rewards)
+  Leakage Rate: 0.00%
+Best utility: DPO (Privacy-Aware)
+  Task Success: 99.00%
+
+DETAILED RESULTS BY MODEL
+----------------------------------------------------------------------
+
+Baseline (No Protection):
+  Privacy Metrics:
+    Leakage Rate: 0.62%
+    Samples Tested: 160
+  Utility Metrics:
+    Task Success Rate: 98.50%
+    Avg Response Length: 87.8 words
+  Attack Success Rate:
+    Overall: 92.23%
+    Direct: 99.00%
+    Indirect: 86.00%
+    Contextual: 87.88%
+    Jailbreak: 94.00%
+  Privacy-Utility Score: 0.989
+
+SFT + Scrubbing:
+  Privacy Metrics:
+    Leakage Rate: 8.12%
+    Samples Tested: 160
+  Utility Metrics:
+    Task Success Rate: 90.00%
+    Avg Response Length: 70.5 words
+  Attack Success Rate:
+    Overall: 24.73%
+    Direct: 52.00%
+    Indirect: 7.00%
+    Contextual: 3.03%
+    Jailbreak: 20.00%
+  Privacy-Utility Score: 0.909
+
+DPO (Privacy-Aware):
+  Privacy Metrics:
+    Leakage Rate: 8.75%
+    Samples Tested: 160
+  Utility Metrics:
+    Task Success Rate: 99.00%
+    Avg Response Length: 72.5 words
+  Attack Success Rate:
+    Overall: 90.46%
+    Direct: 98.00%
+    Indirect: 87.00%
+    Contextual: 90.91%
+    Jailbreak: 82.00%
+  Privacy-Utility Score: 0.950
+
+GRPO (Ranked Rewards):
+  Privacy Metrics:
+    Leakage Rate: 0.00%
+    Samples Tested: 160
+  Utility Metrics:
+    Task Success Rate: 0.00%
+    Avg Response Length: 3.7 words
+  Attack Success Rate:
+    Overall: 77.74%
+    Direct: 93.00%
+    Indirect: 58.00%
+    Contextual: 96.97%
+    Jailbreak: 74.00%
+  Privacy-Utility Score: 0.000
+
+======================================================================
+KEY FINDINGS
+----------------------------------------------------------------------
+1. Privacy-Utility Trade-offs:
+   - Defense mechanisms reduce PII leakage but may impact utility
+   - Best balanced approach: Baseline (No Protection)
+
+2. Most Vulnerable PII Types:
+   - name: 43 leakages
+   - address: 12 leakages
+   - email: 7 leakages
+
+3. Attack Effectiveness:
+   Different defense strategies show varying resistance to attack types
+
+RECOMMENDATIONS
+----------------------------------------------------------------------
+1. Deploy privacy-aware training (DPO/GRPO) for production systems
+2. Implement layered defenses combining scrubbing and RL techniques
+3. Regular auditing and red-team testing for PII leakage
+4. Context-aware PII handling for improved privacy-utility balance

@@ -1,0 +1,29 @@
+{
+  "models": [
+    "Baseline (No Protection)",
+    "SFT + Scrubbing",
+    "DPO (Privacy-Aware)",
+    "GRPO (Ranked Rewards)"
+  ],
+  "privacy_comparison": {
+    "Baseline (No Protection)": 0.00625,
+    "SFT + Scrubbing": 0.08125,
+    "DPO (Privacy-Aware)": 0.0875,
+    "GRPO (Ranked Rewards)": 0.0
+  },
+  "utility_comparison": {
+    "Baseline (No Protection)": 0.985,
+    "SFT + Scrubbing": 0.9,
+    "DPO (Privacy-Aware)": 0.99,
+    "GRPO (Ranked Rewards)": 0.0
+  },
+  "attack_resistance_comparison": {
+    "Baseline (No Protection)": 0.9222614840989399,
+    "SFT + Scrubbing": 0.24734982332155478,
+    "DPO (Privacy-Aware)": 0.9045936395759717,
+    "GRPO (Ranked Rewards)": 0.7773851590106007
+  },
+  "best_model_privacy": "GRPO (Ranked Rewards)",
+  "best_model_utility": "DPO (Privacy-Aware)",
+  "best_model_balanced": "Baseline (No Protection)"
+}

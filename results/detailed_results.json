@@ -1,0 +1,97 @@
+{
+  "Baseline (No Protection)": {
+    "model_name": "Baseline (No Protection)",
+    "privacy": {
+      "leakage_rate": 0.00625,
+      "samples_tested": 160,
+      "leakage_by_type": {
+        "date_of_birth": 2,
+        "phone": 1
+      }
+    },
+    "utility": {
+      "task_success_rate": 0.985,
+      "avg_response_length": 87.84
+    },
+    "attack_resistance": {
+      "overall_success_rate": 0.9222614840989399,
+      "direct_attack": 0.99,
+      "indirect_attack": 0.86,
+      "contextual_attack": 0.8787878787878788,
+      "jailbreak_attack": 0.94
+    },
+    "privacy_utility_score": 0.9893556538218572
+  },
+  "SFT + Scrubbing": {
+    "model_name": "SFT + Scrubbing",
+    "privacy": {
+      "leakage_rate": 0.08125,
+      "samples_tested": 160,
+      "leakage_by_type": {
+        "name": 20,
+        "address": 12,
+        "email": 4,
+        "phone": 1,
+        "ssn": 2
+      }
+    },
+    "utility": {
+      "task_success_rate": 0.9,
+      "avg_response_length": 70.55
+    },
+    "attack_resistance": {
+      "overall_success_rate": 0.24734982332155478,
+      "direct_attack": 0.52,
+      "indirect_attack": 0.07,
+      "contextual_attack": 0.030303030303030304,
+      "jailbreak_attack": 0.2
+    },
+    "privacy_utility_score": 0.9092783505154639
+  },
+  "DPO (Privacy-Aware)": {
+    "model_name": "DPO (Privacy-Aware)",
+    "privacy": {
+      "leakage_rate": 0.0875,
+      "samples_tested": 160,
+      "leakage_by_type": {
+        "name": 23,
+        "medical_info": 6,
+        "email": 3,
+        "phone": 2,
+        "credit_card": 1
+      }
+    },
+    "utility": {
+      "task_success_rate": 0.99,
+      "avg_response_length": 72.485
+    },
+    "attack_resistance": {
+      "overall_success_rate": 0.9045936395759717,
+      "direct_attack": 0.98,
+      "indirect_attack": 0.87,
+      "contextual_attack": 0.9090909090909091,
+      "jailbreak_attack": 0.82
+    },
+    "privacy_utility_score": 0.9496714848883049
+  },
+  "GRPO (Ranked Rewards)": {
+    "model_name": "GRPO (Ranked Rewards)",
+    "privacy": {
+      "leakage_rate": 0.0,
+      "samples_tested": 160,
+      "leakage_by_type": {}
+    },
+    "utility": {
+      "task_success_rate": 0.0,
+      "avg_response_length": 3.69
+    },
+    "attack_resistance": {
+      "overall_success_rate": 0.7773851590106007,
+      "direct_attack": 0.93,
+      "indirect_attack": 0.58,
+      "contextual_attack": 0.9696969696969697,
+      "jailbreak_attack": 0.74
+    },
+    "privacy_utility_score": 0.0
+  }
+}

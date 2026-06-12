@@ -1,0 +1,51 @@
+{
+  "common_failure_patterns": [],
+  "pii_types_most_leaked": {
+    "date_of_birth": {
+      "Baseline (No Protection)": 2
+    },
+    "phone": {
+      "Baseline (No Protection)": 1,
+      "SFT + Scrubbing": 1,
+      "DPO (Privacy-Aware)": 2
+    },
+    "name": {
+      "SFT + Scrubbing": 20,
+      "DPO (Privacy-Aware)": 23
+    },
+    "address": {
+      "SFT + Scrubbing": 12
+    },
+    "email": {
+      "SFT + Scrubbing": 4,
+      "DPO (Privacy-Aware)": 3
+    },
+    "ssn": {
+      "SFT + Scrubbing": 2
+    },
+    "medical_info": {
+      "DPO (Privacy-Aware)": 6
+    },
+    "credit_card": {
+      "DPO (Privacy-Aware)": 1
+    }
+  },
+  "attack_vulnerabilities": {
+    "Baseline (No Protection)": {
+      "most_vulnerable_to": "direct",
+      "success_rate": 0.99
+    },
+    "SFT + Scrubbing": {
+      "most_vulnerable_to": "direct",
+      "success_rate": 0.52
+    },
+    "DPO (Privacy-Aware)": {
+      "most_vulnerable_to": "direct",
+      "success_rate": 0.98
+    },
+    "GRPO (Ranked Rewards)": {
+      "most_vulnerable_to": "contextual",
+      "success_rate": 0.9696969696969697
+    }
+  }
+}
